@@ -44,14 +44,14 @@
       border:1px solid #ddd;
       width:37em;
       }
-
+/*width:50px;*/
   button {    
           font-weight:normal;color:#444;
-          font-size:16px;line-height:22px;height:28px;
+          font-size:18px;line-height:22px;height:28px;
           text-decoration:center;
-      width:50px;overflow:visible;
-          margin:0;
-          padding:1px 3px;
+      overflow:visible;
+          margin:2px;
+          padding:3px 5px;
       background-color:#feeefe;
       border:1px solid #ddd;
       cursor:pointer;
@@ -63,6 +63,18 @@
       -webkit-box-shadow:-2px 2px 2px #ccc;
       }
 
+#optradios input{
+      font-size:18px;line-height:22px;height:26px;
+      padding:0px;
+      border:1px solid #ddd;
+      width:1em;
+}
+td{
+  text-align:center;
+}
+.title td{
+  font-style： italic;
+}
     </style>
 </head>
 <body>

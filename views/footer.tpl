@@ -2,8 +2,7 @@
 </div>
 <div id="footbar">
 <h4>导航:<a href="/">首页</a>
-|<a href="/historic">历史</a>
-|<a href="https://bitbucket.org/ZoomQuiet/bottle-simple-todo/wiki/Home">帮助</a>
+|<a href="https://github.com/lb-crx/radar4crx">帮助</a>
 </h4>
 <div id="poweredby">
 <b>powered by:</b>
