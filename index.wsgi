@@ -6,7 +6,7 @@ from bottle import Bottle, request, template, static_file
 
 app = Bottle()
 
-
+'''
 class Borg():
     '''base http://blog.youxu.info/2010/04/29/borg
         - 单例式配置收集类
@@ -15,8 +15,7 @@ class Borg():
     def __init__(self):
         self.__dict__ = self.__collective_mind
 cfg = Borg()
-
-
+'''
 
 @app.route('/static/:filename')
 def server_static(filename):
