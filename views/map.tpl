@@ -6,7 +6,7 @@
 <h2>= 雷达图! =</h2>
 
 
-<img src="static/r4-{{pli}}-{{ptotal}}.png"/>
+<img src="http://zqfoto.b0.upaiyun.com/map2radar4crx/r4-{{pli}}-{{ptotal}}.png"/>
 <br/>
 总分: {{ptotal}} <sup>= (({{easy}}+{{func}}+{{acti}}+{{beau}})/20)*100</sup>
 <br/>* 易用~ {{easy}}

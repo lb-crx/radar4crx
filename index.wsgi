@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-VERSION = "radar4crx v12.7.3"
+VERSION = "radar4crx v12.7.4"
 import sae
+from bottle import Bottle, get, post, request, template, static_file, debug
 #import urllib2 as urilib
-from bottle import Bottle, request, template, static_file
 
 app = Bottle()
-
+debug(True)
 """
 class Borg():
     '''base http://blog.youxu.info/2010/04/29/borg
@@ -19,19 +19,21 @@ cfg = Borg()
 
 @app.route('/static/:filename')
 def server_static(filename):
-    return static_file(filename, root='map')
+    return static_file(filename, root='./map')
 
 @app.route('/')
 def index():
     return template('index.tpl'
         )
 
-@app.route('/radar', method='POST')
+#@app.route('/radar', method='POST')
+@app.post('/radar')
 def radar():
-    e = request.forms.easy
-    f = request.forms.func
-    a = request.forms.acti
-    b = request.forms.beau
+    #print dir(request.forms.items)
+    e = request.forms.get("easy")
+    f = request.forms.get("func")
+    a = request.forms.get("acti")
+    b = request.forms.get("beau")
     pli = e+f+a+b
     
     return template('map.tpl'
