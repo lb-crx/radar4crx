@@ -5,7 +5,7 @@ from bottle import Bottle, get, post, request, template, static_file, debug
 #import urllib2 as urilib
 
 app = Bottle()
-debug(True)
+#debug(True)
 """
 class Borg():
     '''base http://blog.youxu.info/2010/04/29/borg
@@ -15,17 +15,16 @@ class Borg():
     def __init__(self):
         self.__dict__ = self.__collective_mind
 cfg = Borg()
-"""
 
 @app.route('/static/:filename')
 def server_static(filename):
     return static_file(filename, root='./map')
+"""
 
 @app.route('/')
 def index():
     return template('index.tpl'
         )
-
 #@app.route('/radar', method='POST')
 @app.post('/radar')
 def radar():
@@ -35,7 +34,6 @@ def radar():
     a = request.forms.get("acti")
     b = request.forms.get("beau")
     pli = e+f+a+b
-    
     return template('map.tpl'
         ,pli=pli
         ,ptotal="%d"%((int(e)+int(f)+int(a)+int(b))*100/20)
