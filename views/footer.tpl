@@ -10,6 +10,7 @@
     ,<a href="http://bottle.paws.de/">Bottle</a>
     ,<a href="http://www.sublimetext.com/">subl</a>
     ,<a href="http://sae.sina.com.cn">SAE</a>
+    ,<a href="https://www.upyun.com/">UpYun</a>
     ,<a href="http://www.catb.org/hacker-emblem/">Hacker</a>
  </a>
 </div>
